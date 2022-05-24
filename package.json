@@ -51,10 +51,8 @@
     "sourceMap": true,
     "instrument": true
   },
-  {
-    "publishConfig": {
-      "access": "public"
-    }
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@testdeck/mocha": "^0.2.0",
