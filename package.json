@@ -51,6 +51,11 @@
     "sourceMap": true,
     "instrument": true
   },
+  {
+    "publishConfig": {
+      "access": "public"
+    }
+  },
   "devDependencies": {
     "@testdeck/mocha": "^0.2.0",
     "@types/chai": "^4.3.0",
