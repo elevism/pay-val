@@ -1,0 +1,32 @@
+version: 2
+
+registries:
+  npm-private:
+    type: npm-registry
+    url: https://registry.npmjs.org
+    token: ${{ secrets.NPM_TOKEN }}
+
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 20
+    registries:
+      - npm-private
+    allow:
+      ## only allow dependabot to create PRs for third party production dependencies
+      - dependency-type: production
+
+    labels:
+      - "🧰 type:chore"
+      - "🤖 bot"
+    commit-message:
+      prefix: "🤖 📦 "
+      prefix-development: "🤖 📦 [dev]"
+
+  ## Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"

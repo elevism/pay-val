@@ -1,0 +1,15 @@
+{
+  "bail": true,
+  "check-leaks": true,
+  "diff": true,
+  "extension": ["cjs"],
+  "node-option": ["unhandled-rejections=strict"],
+  "package": "./package.json",
+  "parallel": true,
+  "spec": ["src/**/*.spec.ts"],
+  "watch": false,
+  "require": [
+    "ts-node/register",
+    "source-map-support/register"
+  ]
+}

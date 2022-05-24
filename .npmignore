@@ -1,0 +1,13 @@
+!lib
+.nyc_output
+.out-tsc-spec
+.vscode
+.github
+coverage
+src
+.gitignore
+.mocharc.json
+README.md
+tsconfig.json
+tslint.json
+yarn.lock
