@@ -24,6 +24,6 @@ git add package.json CHANGELOG.md
 
 git commit -m "Release v${NEW_VERSION}"
 
-git push -u origin master
+git push -u origin release
 
 open https://github.com/elevism/pay-val/pull/new/release
