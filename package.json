@@ -1,6 +1,6 @@
 {
   "name": "@elevism/pay-val",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Payment info validation utility",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -61,6 +61,7 @@
     "mocha": "9",
     "nyc": "^15.1.0",
     "offline-github-changelog": "2",
+    "shelljs": "^0.8.5",
     "source-map-support": "^0.5.21",
     "ts-node": "10",
     "tslint": "6",

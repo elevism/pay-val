@@ -1,0 +1,59 @@
+[
+  {
+    "name": "🙈 version:patch",
+    "color": "f682eb",
+    "description": "Requires a patch version bump"
+  },
+  {
+    "name": "👌 version:minor",
+    "color": "f682eb",
+    "description": "Requires a minor version bump"
+  },
+  {
+    "name": "😱 version:major",
+    "color": "f682eb",
+    "description": "Requires a major version bump - breaking changes"
+  },
+
+  {
+    "name": "🙂 type:enhancement",
+    "color": "a2eeef",
+    "description": "Enhancing existing features"
+  },
+  {
+    "name": "🐛 type:bug",
+    "color": "d73a4a",
+    "description": "Something isn't working"
+  },
+  {
+    "name": "🧰 type:chore",
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation"
+  },
+  {
+    "name": "🚀 type:feature",
+    "color": "a2eeef",
+    "description": "New feature or request"
+  },
+  {
+    "name": "☣ type:security",
+    "color": "d73a4a",
+    "description": "Security issue"
+  },
+
+  {
+    "name": "❔ question",
+    "color": "d876e3",
+    "description": "Further information is requested"
+  },
+  {
+    "name": "❌ wontfix",
+    "color": "ffffff",
+    "description": "This will not be worked on"
+  },
+  {
+    "name": "🤖 bot",
+    "color": "a1aca4",
+    "description": "Action by bot"
+  }
+]
