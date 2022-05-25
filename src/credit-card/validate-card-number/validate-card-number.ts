@@ -6,6 +6,10 @@ import { CARDS } from '../cards.const';
  * Validate a credit card number
  */
 export const validateCardNumber = (cardType: CardType, cardNumber: string): boolean => {
+  if (typeof cardNumber === 'undefined') {
+    return false;
+  }
+
   const stripped = cardNumber.replace(/\s+|-/g, '');
 
   // if it's not all digits after stripping spaces/hyphens, it's invalid

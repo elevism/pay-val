@@ -4,6 +4,10 @@ import { Card } from '../interface';
  * Get a card definition from a card number
  */
 export const getCardFromCardNumber = (cards: Card[], cardNumber: string): Card => {
+  if (typeof cardNumber === 'undefined') {
+    return undefined;
+  }
+
   const digits = cardNumber.replace(/\D/g, '');
 
   const matchingCards = cards.reduce<{ card: Card; len: number }>(

@@ -69,4 +69,11 @@ import { validateCardNumber } from './validate-card-number';
     expect(actual).to.not.be.undefined;
     expect(actual).to.be.false;
   }
+
+  @test 'should fail with undefined'() {
+    const actual = validateCardNumber(CardType.Visa, undefined);
+
+    expect(actual).to.not.be.undefined;
+    expect(actual).to.be.false;
+  }
 }

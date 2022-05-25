@@ -110,4 +110,10 @@ import { CARDS } from '../cards.const';
 
     expect(actual).to.be.undefined;
   }
+
+  @test 'undefined number should return undefined'() {
+    const actual = getCardFromCardNumber(Object.values(CARDS), undefined);
+
+    expect(actual).to.be.undefined;
+  }
 }
